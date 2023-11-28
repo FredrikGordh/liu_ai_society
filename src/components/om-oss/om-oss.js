@@ -1,8 +1,44 @@
 import React from 'react';
 import Nav from "../nav/nav"
+import founder from "./../../static/nikke.jpeg"
+import co_founder1 from "./../../static/fredrik.jpeg"
+import co_founder2 from "./../../static/erik.jpeg"
+// import co_founder3 from "./../../static/co-founder.jpg"
 
 
 const Om_oss = () => {
+
+    // could you write a function for portraits of the founding partners?
+    const FoundingPartners = () => {
+        return(
+            <div>
+                <row>
+                    <div class="portrait-container col-4">
+                        <img src={founder} alt="founder" class="portrait"/>
+                        <p class="founder-name">Niklas Wretblad</p>
+                        <p class="founder-title">Founder</p>
+                    </div>
+                    <div class="portrait-container col-4">
+                        <img src={co_founder1} alt="founder" class="portrait"/>
+                        <p class="founder-name">Fredrik Gordh</p>
+                        <p class="founder-title">Co-Founder</p>
+                    </div>
+                </row>
+
+                <div class="portrait-container">
+                    <img src={co_founder2} alt="founder" class="portrait"/>
+                    <p class="founder-name">Erik Larsson</p>
+                    <p class="founder-title">Co-Founder</p>
+                </div>
+                <div class="portrait-container">
+                    {/* <img src='test' alt="founder" class="portrait"/> */}
+                    <p class="founder-name">Axel Wiksäter</p>
+                    <p class="founder-title">Co-Founder</p>
+                </div>
+            </div>
+        )
+    }
+
     return(
         <div>
             <div class='group_picture col-12' id="img-om-oss" >
@@ -30,14 +66,12 @@ const Om_oss = () => {
 
                     </p>
                 </div>
+                <img src='"./../../static/nikke.jpeg"' alt="founder" class="founder-portrait"/>
 
                 <div class="paragraph-3">
                     <h3>Founding Partners</h3>
-                    <p>
-                    
-
-                    </p>
-                </div>
+                    {FoundingPartners()}
+                </div>  
 
             </div>
         </div>
