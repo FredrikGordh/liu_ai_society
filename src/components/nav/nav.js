@@ -53,9 +53,9 @@ const Nav = () => {
                             <a class="nav-link " id="nav-link" href="/event">Event</a>
                         </div>
                         
-                        <div class="nav-item col-2" id="nav-item">
+                        {/* <div class="nav-item col-2" id="nav-item">
                             <a class="nav-link " id="nav-link" href="/hall-of-fame"> Hall of Fame</a>
-                        </div> 
+                        </div>  */}
                 </nav>
             ):( 
                 <nav class="navbar navbar-default navbar-light col-12" role="navigation" id="small-navbar">  
@@ -78,9 +78,9 @@ const Nav = () => {
                             <li class="nav-item" id="nav-nav-item-small">
                                 <a class="nav-link" id="nav-link-small" href="/event">Event</a>
                             </li>
-                            <li class="nav-item" id="nav-nav-item-small">
+                            {/* <li class="nav-item" id="nav-nav-item-small">
                                 <a class="nav-link" id="nav-link-small" href="/hall-of-fame">Hall of Fame</a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
               </nav>

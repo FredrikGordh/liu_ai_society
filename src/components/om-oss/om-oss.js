@@ -3,7 +3,7 @@ import Nav from "../nav/nav"
 import founder from "./../../static/nikke.jpeg"
 import co_founder1 from "./../../static/fredrik.jpeg"
 import co_founder2 from "./../../static/erik.jpeg"
-// import co_founder3 from "./../../static/co-founder.jpg"
+import co_founder3 from "./../../static/axel.gif"
 
 
 const Om_oss = () => {
@@ -12,28 +12,27 @@ const Om_oss = () => {
     const FoundingPartners = () => {
         return(
             <div>
-                <row>
-                    <div class="portrait-container col-4">
-                        <img src={founder} alt="founder" class="portrait"/>
-                        <p class="founder-name">Niklas Wretblad</p>
-                        <p class="founder-title">Founder</p>
+                <div className='row text-center'>
+                    <div className="portrait-container col-3 centered-content">
+                        <img src={founder} alt="founder" className="portrait"/>
+                        <p className="founder-name">Niklas Wretblad</p>
+                        <p className="founder-title">Founder</p>
                     </div>
-                    <div class="portrait-container col-4">
-                        <img src={co_founder1} alt="founder" class="portrait"/>
-                        <p class="founder-name">Fredrik Gordh</p>
-                        <p class="founder-title">Co-Founder</p>
+                    <div className="portrait-container col-3">
+                        <img src={co_founder1} alt="founder" className="portrait"/>
+                        <p className="founder-name">Fredrik Gordh</p>
+                        <p className="founder-title">Co-Founder</p>
                     </div>
-                </row>
-
-                <div class="portrait-container">
-                    <img src={co_founder2} alt="founder" class="portrait"/>
-                    <p class="founder-name">Erik Larsson</p>
-                    <p class="founder-title">Co-Founder</p>
-                </div>
-                <div class="portrait-container">
-                    {/* <img src='test' alt="founder" class="portrait"/> */}
-                    <p class="founder-name">Axel Wiksäter</p>
-                    <p class="founder-title">Co-Founder</p>
+                    <div className="portrait-container col-3">
+                        <img src={co_founder2} alt="founder" className="portrait"/>
+                        <p className="founder-name">Erik Larsson</p>
+                        <p className="founder-title">Co-Founder</p>
+                    </div>
+                    <div className="portrait-container col-3">
+                        <img src={co_founder3} alt="founder" className="portrait"/>
+                        <p className="founder-name">Axel Wiksäter</p>
+                        <p className="founder-title">Co-Founder</p>
+                    </div>
                 </div>
             </div>
         )
@@ -66,10 +65,18 @@ const Om_oss = () => {
 
                     </p>
                 </div>
-                <img src='"./../../static/nikke.jpeg"' alt="founder" class="founder-portrait"/>
 
-                <div class="paragraph-3">
-                    <h3>Founding Partners</h3>
+                <div class="paragraph-3 text-center">
+                    <h3>Kontakta Oss</h3>
+                    <p>
+                    <a href="mailto:contact@liuais.com">contact@liuais.com</a>
+                    </p>
+                </div>
+    
+
+                <div class="paragraph-4">
+                    <h3 className="text-center">Founding Partners</h3>
+                    <br></br>
                     {FoundingPartners()}
                 </div>  
 
