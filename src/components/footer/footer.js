@@ -10,8 +10,9 @@ const Footer = () => {
                     </div>                    
                     
                     <div class="logo-row">
-                        <a href="https://www.facebook.com/powerslideliu/" class="fa fa-facebook " id="fb-logo" ></a>
-                        <a href="https://www.instagram.com/powerslide_liu/" class="fa fa-instagram " id="insta-logo"></a>
+                        <a href="https://www.facebook.com/liuaisociety" class="fa fa-facebook " id="fb-logo" ></a>
+                        <a href="https://www.instagram.com/liuaisociety/" class="fa fa-instagram " id="insta-logo"></a>
+                        <a href="https://www.linkedin.com/company/liu-ai-society/" class="fa fa-linkedin " id="linkedin-logo"></a>
                     </div>
                     
                 

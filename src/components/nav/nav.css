@@ -4,9 +4,9 @@
 }
 
 .navLogo{
-    border-radius: 75px;
-    height: 150px;
-    width: 150px;
+    /* border-radius: 75px; */
+    height: 250px;
+    width: 250px;
     margin-left: 40px;
     flex: auto;
   }

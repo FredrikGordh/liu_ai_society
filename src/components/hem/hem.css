@@ -1,9 +1,9 @@
 .group_picture{
-  background-image: url("./../../static/group2.jpg");
+  background-image: url("./../../static/coverphoto.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
-  height: 120vh;
+  height: 100vh;
   position: relative;
   padding: 0;
 }
