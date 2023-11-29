@@ -5,7 +5,7 @@ import Event from "./components/event/event"
 import Hall_of_fame from "./components/hall-of-fame/hall-of-fame"
 import Footer from "./components/footer/footer"
 import {Router, Routes, Route , BrowserRouter} from 'react-router-dom'
-import Medlem from "./components/medlem/medlem"
+import Kurser from "./components/education/education"
 import Admin_login from "./components/admin/admin_login/admin_login"
 import Admin_home from "./components/admin/admin_home/admin_home"
 import Admin_medlemmar from "./components/admin/admin_medlemmar/admin_medlemmar"
@@ -14,7 +14,7 @@ import './App.css'
 import './components/nav/nav.css'
 import './components/hem/hem.css'
 import './components/om-oss/om-oss.css'
-import './components/medlem/medlem.css'
+import './components/education/education.css'
 import './components/event/event.css'
 import './components/hall-of-fame/hall-of-fame.css'
 import './components/footer/footer.css'
@@ -31,7 +31,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/om-oss" element={<Om_oss/>}/>
-            <Route path="/medlem" element={<Medlem/>}/>
+            <Route path="/kurser" element={<Kurser/>}/>
             <Route path="/event" element={<Event/>}/>
             <Route path="/hall-of-fame" element={<Hall_of_fame/>}/>
             <Route path="/admin_login" element={<Admin_login/>}/>

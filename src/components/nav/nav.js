@@ -46,7 +46,7 @@ const Nav = () => {
                         </div>
 
                         <div class="nav-item col-2" id="nav-item">
-                            <a class="nav-link " id="nav-link" href="/medlem">Medlem</a>
+                            <a class="nav-link " id="nav-link" href="/kurser">Kurser</a>
                         </div>
 
                         <div class="nav-item col-2" id="nav-item">
