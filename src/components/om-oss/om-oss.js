@@ -1,9 +1,9 @@
 import React from 'react';
 import Nav from "../nav/nav"
-import founder from "./../../static/nikke.jpeg"
-import co_founder1 from "./../../static/fredrik.jpeg"
-import co_founder2 from "./../../static/erik.jpeg"
-import co_founder3 from "./../../static/axel.gif"
+import founder from "./../../static/images/nikke.jpeg"
+import co_founder1 from "./../../static/images/fredrik.jpeg"
+import co_founder2 from "./../../static/images/erik.jpeg"
+import co_founder3 from "./../../static/images/axel.gif"
 
 
 const Om_oss = () => {

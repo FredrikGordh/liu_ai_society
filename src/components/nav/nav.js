@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from './../../static/liuais_logo1.jpg'
+import logo from './../../static/images/liuais_logo1.jpg'
 
 const Nav = () => {
     const[windowSize, setWindowSize] = useState(getWindowSize());
