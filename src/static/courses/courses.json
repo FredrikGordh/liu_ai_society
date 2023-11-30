@@ -1,0 +1,21 @@
+[
+    {"course_code":"TDDD41","name":"Data Mining - Clustering and Association Analysis","credits":6,"level":"A1X","block":3,"valbar\/obligatorisk ":"E","period":1,"area":"Data analysis","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDD41"},
+    {"course_code":"TDDE09","name":"Natural Language Processing","credits":6,"level":"A1X","block":2,"valbar\/obligatorisk ":"E","period":1,"area":"NLP","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDE09"},
+    {"course_code":"TDDE07","name":"Bayesian Learning","credits":6,"level":"A1X","block":2,"valbar\/obligatorisk ":"E","period":2,"area":"Statistics","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDE07"},
+    {"course_code":"TDDE31","name":"Big Data Analytics","credits":6,"level":"A1X","block":3,"valbar\/obligatorisk ":"E","period":2,"area":"Data analysis","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDE31"},
+    {"course_code":"TDDE64","name":"Sports Analytics","credits":6,"level":"A1X","block":3,"valbar\/obligatorisk ":"E","period":2,"area":"Data analysis","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDE64"},
+    {"course_code":"TDDE70","name":"Data Mining - Clustering and Association Analysis","credits":6,"level":"A1X","block":1,"valbar\/obligatorisk ":"E","period":2,"area":"Neural Networks","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDE70"},
+    {"course_code":"TBMI26","name":"Deep Learning","credits":6,"level":"A1X","block":2,"valbar\/obligatorisk ":"E","period":1,"area":"Neural Networks","link":"https:\/\/studieinfo.liu.se\/kurs\/TBMI26"},
+    {"course_code":"TDDE05","name":"AI Robotics","credits":"6*","level":"A1X","block":4,"valbar\/obligatorisk ":"E","period":1,"area":"Robotik","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDE05"},
+    {"course_code":"TSRT14","name":"Sensor Fusion","credits":6,"level":"A1X","block":3,"valbar\/obligatorisk ":"E","period":1,"area":"Robotik","link":"https:\/\/studieinfo.liu.se\/kurs\/TSRT14"},
+    {"course_code":"TDDE15","name":"Advanced Machine Learning","credits":6,"level":"A1X","block":1,"valbar\/obligatorisk ":"E","period":1,"area":"Generell","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDE15"},
+    {"course_code":"TDDE19","name":"Advanced Project Course - AI and Machine Learning","credits":"6*","level":"A1X","block":4,"valbar\/obligatorisk ":"E","period":1,"area":"Generell","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDE19"},
+    {"course_code":"TNM114","name":"rtificial Intelligence for Interactive Media, Project","credits":6,"level":"A1X","block":2,"valbar\/obligatorisk ":"E","period":1,"area":"Generell","link":"https:\/\/studieinfo.liu.se\/kurs\/TNM114"},
+    {"course_code":"TSBB19","name":"Machine Learning for Computer Vision","credits":6,"level":"A1X","block":2,"valbar\/obligatorisk ":"E","period":1,"area":"Computer Vision","link":"https:\/\/studieinfo.liu.se\/kurs\/TSBB19"},
+    {"course_code":"TSFS12","name":"Autonomous Vehicles - Planning, Control, and Learning Systems","credits":6,"level":"A1X","block":1,"valbar\/obligatorisk ":"E","period":1,"area":"Robotik","link":"https:\/\/studieinfo.liu.se\/kurs\/TSFS12"},
+    {"course_code":"TDDD89","name":"Scientific Method","credits":6,"level":"A1X","block":3,"valbar\/obligatorisk ":"C","period":2,"area":"Generell","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDD89"},
+    {"course_code":"TDDE16","name":"Text Mining","credits":6,"level":"A1X","block":2,"valbar\/obligatorisk ":"E","period":2,"area":"NLP","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDE16"},
+    {"course_code":"TBMI02","name":"Medical Image Analysis","credits":6,"level":"A1X","block":1,"valbar\/obligatorisk ":"E","period":1,"area":"Computer Vision","link":"https:\/\/studieinfo.liu.se\/kurs\/TBMI02"},
+    {"course_code":"TSBB34","name":"Computer Vision for Video Analysis","credits":6,"level":"A1X","block":"-","valbar\/obligatorisk ":"E","period":2,"area":"Computer Vision","link":"https:\/\/studieinfo.liu.se\/en\/kurs\/TSBB34\/vt-2023#overview"},
+    {"course_code":"TSBB33","name":"3D Computer Vision","credits":6,"level":"A1X","block":"-","valbar\/obligatorisk ":"E","period":2,"area":"Computer Vision","link":"https:\/\/studieinfo.liu.se\/en\/kurs\/TSBB33\/vt-2023#syllabus"}
+]
