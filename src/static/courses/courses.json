@@ -29,5 +29,5 @@
     {"course_code":"TAMS43","name":"Probability Theory and Bayesian Networks","credits":"6*","level":"A1X","block":4,"choice":"E","period":1,"area":"Statistics","link":"https:\/\/studieinfo.liu.se\/en\/kurs\/TAMS43"},
     {"course_code":"TPPE78","name":"Quantitative Models and Analysis in Operations Management","credits":6,"level":"A1X","block":1,"choice":"E","period":1,"area":"Statistics","link":"https:\/\/studieinfo.liu.se\/en\/kurs\/TPPE78"},
     {"course_code":"TNM067","name":"Scientific Visualization","credits":6,"level":"A1X","block":3,"choice":"E","period":1,"area":"Data analysis","link":"https:\/\/studieinfo.liu.se\/en\/kurs\/TNM067"},
-    {"course_code":"TAMS41","name":"Statistisk modellering med regressionsmetoder","credits":6,"level":"A1X","block":3,"choice":"V","period":2,"area":"Statistics","link":"https:\/\/studieinfo.liu.se\/en\/kurs\/tams41\/"}
+    {"course_code":"TAMS41","name":"Statistical Modelling with Regression Methods","credits":6,"level":"A1X","block":3,"choice":"V","period":2,"area":"Statistics","link":"https:\/\/studieinfo.liu.se\/en\/kurs\/tams41\/"}
 ]

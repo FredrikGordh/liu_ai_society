@@ -5,8 +5,12 @@ import React from 'react';
 const Footer = () => {
     return (
         <div class="footer">
-                    <div class='footer-text'>
-                        Kontaktuppgifter
+                    <div class='footer-text row text-center'>
+                        <p className='col-12'>Kontaktuppgifter</p>
+                        <br></br>
+                        <div className='col-12'>
+                            <a href=' mailto:contact@liuais.com' className="white-link"> contact@liuais.com</a>
+                        </div>
                     </div>                    
                     
                     <div class="logo-row">

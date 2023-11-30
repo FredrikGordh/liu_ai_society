@@ -3,9 +3,13 @@
   }
   
 .portrait{
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  border-radius: 20%;
+  height: 250px;
+  width: 250px;
   margin-bottom: 10px;
 }
-  
+
+.portrait-container{
+  /* margin-left: 30vh;
+  margin-right: 30vh; */
+}

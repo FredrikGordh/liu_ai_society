@@ -45,3 +45,15 @@
   background: #125688;
   color: white;
 }
+
+#linkedin-logo{
+  position: relative;
+  background: #0077B5;
+  color: white;
+}
+
+.white-link {
+  color: white;
+  /* Optional: to remove the underline */
+  text-decoration: none;
+}

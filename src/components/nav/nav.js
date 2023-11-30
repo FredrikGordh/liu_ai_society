@@ -42,11 +42,11 @@ const Nav = () => {
                         <img src={logo} alt="Logo" class='navLogo '/>
                     </a> 
                         <div class="nav-item col-2 " id="nav-item">
-                            <a class="nav-link " id="nav-link" href="/om-oss">Om oss</a>
+                            <a class="nav-link " id="nav-link" href="/om-oss">About</a>
                         </div>
 
                         <div class="nav-item col-2" id="nav-item">
-                            <a class="nav-link " id="nav-link" href="/kurser">Kurser</a>
+                            <a class="nav-link " id="nav-link" href="/kurser">LiU Courses</a>
                         </div>
 
                         <div class="nav-item col-2" id="nav-item">
