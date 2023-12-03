@@ -1,11 +1,10 @@
 import Home from "./components/hem/hem"
 import Nav from "./components/nav/nav"
-import Om_oss from "./components/om-oss/om-oss"
-import Event from "./components/event/event"
-import Hall_of_fame from "./components/hall-of-fame/hall-of-fame"
+import About from "./components/about/about"
+import Event from "./components/events/events"
 import Footer from "./components/footer/footer"
 import {Router, Routes, Route , BrowserRouter} from 'react-router-dom'
-import Kurser from "./components/education/education"
+import Courses from "./components/education/education"
 import Admin_login from "./components/admin/admin_login/admin_login"
 import Admin_home from "./components/admin/admin_home/admin_home"
 import Admin_medlemmar from "./components/admin/admin_medlemmar/admin_medlemmar"
@@ -13,10 +12,9 @@ import Admin_hantera from "./components/admin/admin_hantera/admin_hantera"
 import './App.css'
 import './components/nav/nav.css'
 import './components/hem/hem.css'
-import './components/om-oss/om-oss.css'
+import './components/about/about.css'
 import './components/education/education.css'
-import './components/event/event.css'
-import './components/hall-of-fame/hall-of-fame.css'
+import './components/events/events.css'
 import './components/footer/footer.css'
 import "./components/admin/admin_login/admin_login.css"
 import "./components/admin/admin_home/admin_home.css"
@@ -30,10 +28,10 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/om-oss" element={<Om_oss/>}/>
-            <Route path="/kurser" element={<Kurser/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/courses" element={<Courses/>}/>
             <Route path="/event" element={<Event/>}/>
-            <Route path="/hall-of-fame" element={<Hall_of_fame/>}/>
+            {/* <Route path="/hall-of-fame" element={<Hall_of_fame/>}/> */}
             <Route path="/admin_login" element={<Admin_login/>}/>
             <Route path="/admin_home" element={<Admin_home/>}/>
             <Route path="/admin_medlemmar" element={<Admin_medlemmar/>}/>

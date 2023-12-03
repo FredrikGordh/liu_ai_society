@@ -1,17 +1,22 @@
 import React from 'react';
 import Nav from "../nav/nav"
+// import ai_society_logo from "./../../static/images/ai_liu_logo.png"
+import { ReactComponent as LiuAisLogo } from './../../static/images/ai_liu_logo.svg';
 
 
 const Home = () => {
     return(
         <div>
-            <div class='group_picture col-12'>
+            <div class='home_background col-12'>
                 <Nav/>
+                <div className='row justify-content-center'>
+                    <LiuAisLogo className='liu_ais_logo col-6'/>
+                </div>
             </div>
-            <div class="content-below">
-
-                <row className='col-12'>
-                    <div class="paragraph-1 col-5 ">
+            <div class="content-below" >
+            
+                <div className='first_text_container row col-12 justify-content-center'>
+                    <div className="paragraph-1 col-6">
                         <h3>Where does it come from?</h3>
                         <p>
                             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
@@ -23,8 +28,8 @@ const Home = () => {
                             The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                         </p>
                     </div>
-                    </row>
-                    <row className='col-12'>
+                    </div>
+                    <div className='second_text_container row col-12 justify-content-center'>
                     <div class="paragraph-2 col-5 ">
                         <h3>  Where can I get some?</h3>
                         <p>
@@ -36,7 +41,7 @@ const Home = () => {
                             The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc
                         </p>
                     </div>
-                </row>
+                </div>
             </div>
         </div>
 
