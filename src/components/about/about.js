@@ -6,7 +6,7 @@ import co_founder2 from "./../../static/images/erik.jpeg"
 import co_founder3 from "./../../static/images/axel.gif"
 
 
-const Om_oss = () => {
+const About = () => {
 
     // could you write a function for portraits of the founding partners?
     const FoundingPartners = () => {
@@ -56,11 +56,11 @@ const Om_oss = () => {
 
     return(
         <div>
-            <div class='group_picture col-12' id="img-om-oss" >
+            <div class='about_background col-12' id="img-om-oss" >
                 <Nav/>
             </div>
             <div class="content text-center"> 
-                <div className="row">
+            <div className='first_text_container row col-12 justify-content-center'>
                     <div className="paragraph-1 col-5">
                         <h3>Who we are</h3>
                         <p>
@@ -82,11 +82,12 @@ const Om_oss = () => {
                     </div>
                 </div>
 
-                <div className='col-12'>
+                <div className='portrait_section_container row col-12 justify-content-center'>
                     <div class="paragraph-4">
                         <h3 className="text-center">Founding Partners</h3>
-                        <br></br>
-                        {FoundingPartners()}
+                        <div className='portrait_container row col-12 justify-content-center'>
+                            {FoundingPartners()}
+                        </div>
                     </div>  
                 </div>
             </div>
@@ -96,4 +97,4 @@ const Om_oss = () => {
     )
 }
 
-export default Om_oss;
+export default About;

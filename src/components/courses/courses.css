@@ -1,0 +1,46 @@
+.courses_background{
+  /* background-image: url("./../../static/images/coverphoto.png"); */
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 70vh;
+  position: relative;
+  padding: 0;
+}
+
+.courses_headline{
+  text-align:center;
+  padding-top: 30vh;
+}
+
+.content-below{
+  width:100%;
+}
+
+.courses_container{
+  width:100%;
+}
+
+.tableContainer{
+  padding-top: 10vh;
+  width: 100%;
+  height: 90vh;
+}
+
+.table_header{
+  margin-bottom:5vh;
+}
+
+#table1 {
+  background-color: #E5E6EB;
+}
+
+#table3{
+  background-color: #E5E6EB;
+  height: 70vh;
+}
+
+
+
+

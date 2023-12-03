@@ -4,7 +4,7 @@ import About from "./components/about/about"
 import Events from "./components/events/events"
 import Footer from "./components/footer/footer"
 import {Router, Routes, Route , BrowserRouter} from 'react-router-dom'
-import Courses from "./components/education/education"
+import Courses from "./components/courses/courses"
 import Admin_login from "./components/admin/admin_login/admin_login"
 import Admin_home from "./components/admin/admin_home/admin_home"
 import Admin_medlemmar from "./components/admin/admin_medlemmar/admin_medlemmar"
@@ -13,7 +13,7 @@ import './App.css'
 import './components/nav/nav.css'
 import './components/homepage/homepage.css'
 import './components/about/about.css'
-import './components/education/education.css'
+import './components/courses/courses.css'
 import './components/events/events.css'
 import './components/footer/footer.css'
 import "./components/admin/admin_login/admin_login.css"
