@@ -8,7 +8,7 @@ const Event = () => {
             <div class='event_background col-12' id="img-event">
                 <Nav/>
 
-                <h2 className='event_headline'>Event Image</h2>
+                <h3 className='event_headline'>Event Image</h3>
             </div>
             <div class="content-below">
            

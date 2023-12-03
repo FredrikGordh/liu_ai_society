@@ -58,6 +58,7 @@ const About = () => {
         <div>
             <div class='about_background col-12' id="img-om-oss" >
                 <Nav/>
+                <h3 className='about_headline'> Contact Details</h3>
             </div>
             <div class="content text-center"> 
             <div className='first_text_container row col-12 justify-content-center'>

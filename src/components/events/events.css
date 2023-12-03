@@ -4,14 +4,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
-  height: 50vh;
+  height: 70vh;
   position: relative;
   padding: 0;
 }
 
 .event_headline{
   text-align:center;
-  padding-top: 20vh;
+  padding-top: 30vh;
   /* justify-content:center; */
 }
 
