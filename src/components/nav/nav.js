@@ -64,7 +64,7 @@ const Nav = () => {
                         
                         <ButtonGroup style={{marginLeft:'60%'}}  variant="text" color="inherit" >
                             <Button color="inherit" href="/events" style={{color:'black'}}>Events</Button>
-                            <Button color="inherit" href="/contact" style={{color:'black'}}> Contact</Button>
+                            <Button color="inherit" href="/about" style={{color:'black'}}> Contact</Button>
                             <Button color="inherit" href="/courses" style={{color:'black'}}>LiU Courses</Button>
                         </ButtonGroup>
                     </Toolbar>

@@ -5,12 +5,15 @@ import Nav from "../nav/nav"
 const Event = () => {
     return(
         <div>
-            <div class='group_picture col-12' id="img-event">
+            <div class='event_background col-12' id="img-event">
                 <Nav/>
+
+                <h2 className='event_headline'>Event Image</h2>
             </div>
             <div class="content-below">
            
-                <div class="paragraph-1">
+            <div className='first_text_container row col-12 justify-content-center'>
+                <div class="paragraph-1 col-6">
                     <h3>Where does it come from?</h3>
                      
                     <p>
@@ -23,8 +26,10 @@ const Event = () => {
                         The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                     </p>
                 </div>
-
-                <div class="paragraph-2">
+            </div>
+            
+            <div className='second_text_container row col-12 justify-content-center'>
+                <div class="paragraph-2 col-6">
                     <h3>  Where can I get some?</h3>
                     <p>
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, 
@@ -35,6 +40,7 @@ const Event = () => {
                         The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc
                     </p>
                 </div>
+            </div>
 
             </div>
         </div>
