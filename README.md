@@ -5,14 +5,14 @@ Temporary React Webapplication for LiU AI Society
 
 #### Get started
 
-`<pip install nodeenv>`
+`pip install nodeenv`
 
-`<virtualenv env>`
+`virtualenv env`
 
-`<env/bin/activate>`
+`. env/bin/activate`
 
-`<npm install>`
+`npm install`
 
-`<npm start>`
+`npm start`
 
 
