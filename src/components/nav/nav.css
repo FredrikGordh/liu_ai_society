@@ -3,13 +3,20 @@
     overflow: hidden; 
 }
 
-.navLogo{
-    /* border-radius: 75px; */
-    height: 250px;
-    width: 250px;
-    margin-left: 40px;
-    flex: auto;
-  }
+
+.nav_logo_container{
+    position: relative;
+}
+
+.navbar_logo{
+    position: absolute;
+    scale: 0.25;
+    /* left:0; */
+}
+
+.button_group{
+    /* margin-left:100px; */
+}
 
 
 #nav-item{
@@ -20,17 +27,13 @@
     margin-right: 5vw;
     border-style: solid;
     border-color: black;
+
 }
 
-#nav-item :hover{
-    /* color: black;  */
-}
 
 #navbar-burger{
     background-color: #f1b765;
 }
-
-
 
 #nav-link{
     color: black;

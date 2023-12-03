@@ -1,7 +1,7 @@
-import Home from "./components/hem/hem"
+import Home from "./components/homepage/homepage"
 import Nav from "./components/nav/nav"
 import About from "./components/about/about"
-import Event from "./components/events/events"
+import Events from "./components/events/events"
 import Footer from "./components/footer/footer"
 import {Router, Routes, Route , BrowserRouter} from 'react-router-dom'
 import Courses from "./components/education/education"
@@ -11,7 +11,7 @@ import Admin_medlemmar from "./components/admin/admin_medlemmar/admin_medlemmar"
 import Admin_hantera from "./components/admin/admin_hantera/admin_hantera"
 import './App.css'
 import './components/nav/nav.css'
-import './components/hem/hem.css'
+import './components/homepage/homepage.css'
 import './components/about/about.css'
 import './components/education/education.css'
 import './components/events/events.css'
@@ -30,7 +30,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/courses" element={<Courses/>}/>
-            <Route path="/event" element={<Event/>}/>
+            <Route path="/events" element={<Events/>}/>
             {/* <Route path="/hall-of-fame" element={<Hall_of_fame/>}/> */}
             <Route path="/admin_login" element={<Admin_login/>}/>
             <Route path="/admin_home" element={<Admin_home/>}/>

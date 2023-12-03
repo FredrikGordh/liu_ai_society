@@ -4,12 +4,15 @@ import Nav from "../nav/nav"
 import { ReactComponent as LiuAisLogo } from './../../static/images/ai_liu_logo.svg';
 
 
+
 const Home = () => {
+
+
     return(
         <div>
             <div class='home_background col-12'>
                 <Nav/>
-                <div className='row justify-content-center'>
+                <div className='logo_container'>
                     <LiuAisLogo className='liu_ais_logo col-6'/>
                 </div>
             </div>
