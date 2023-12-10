@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, ButtonGroup} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import IconButton from '@mui/material/IconButton';
+import Drawer from '@mui/material/Drawer';
+import List from '@mui/joy/List';
+import ListItem from '@mui/joy/ListItem';
+import ListItemButton from '@mui/joy/ListItemButton';
+import Box from '@mui/joy/Box';
+
+
 import { ReactComponent as NavbarLogo }  from '../../static/images/navbar_logo.svg';
 
 
@@ -10,6 +19,15 @@ const Nav = () => {
     const[largeScreen, setLargeScreen] = useState(false)
     const [navBackground, setNavBackground] = useState('transparent');
     const [navbarBorder, setNavbarBorder] = useState('none');
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+    const menuItems = [
+        { text: 'Events', href: '/events' },
+        { text: 'Contact', href: '/about' },
+        { text: 'LiU Courses', href: '/courses' },
+      ];
 
     let navigate = useNavigate();
 
@@ -40,9 +58,24 @@ const Nav = () => {
         setNavbarBorder(show ? 3 : 'none');
       };
 
-      const handleClick = () => {
+    const handleClick = () => {
         navigate('/'); // Use the route you want to navigate to
         console.log('clicked the logo')
+    };
+
+    const handleMenuToggle = () => {
+        setMenuOpen(!menuOpen);
+    };
+
+    const toggleDrawer = (open) => (event) => {
+        if (
+          event.type === 'keydown' &&
+          (event.key === 'Tab' || event.key === 'Shift')
+        ) {
+          return;
+        }
+    
+        setIsDrawerOpen(open);
       };
 
 
@@ -52,15 +85,34 @@ const Nav = () => {
         return {innerWidth, innerHeight};
     }
 
+    
+      
+    const list = (
+      <Box
+        role="presentation"
+        onClick={toggleDrawer(false)}
+        onKeyDown={toggleDrawer(false)}
+      >
+        <List>
+            {menuItems.map((item) => (
+            <ListItem key={item.text}>
+                <Button color="inherit" href={item.href} style={{color: 'black', width: '100%' }}>
+                {item.text}
+                </Button>
+            </ListItem>
+            ))}
+        </List>
+      </Box>
+    );
 
-
+      
     return (
         <div>
-            {windowSize.innerWidth > 779 ?(
+            {windowSize.innerWidth > 1100 ?(
                 <AppBar position="fixed" style={{ background: navBackground }} sx={{ boxShadow: navbarBorder, borderBottom: 0 }}>
-                    <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-
-                        <NavbarLogo onClick={handleClick} left={0} className='navbar_logo'/> 
+                    <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', marginRight:'-25vw' }}>
+                    
+                        <NavbarLogo onClick={handleClick} left={0} className='navbar_logo col-1'/> 
                         
                         <ButtonGroup style={{marginLeft:'60%'}}  variant="text" color="inherit" >
                             <Button color="inherit" href="/events" style={{color:'black'}}>Events</Button>
@@ -70,34 +122,34 @@ const Nav = () => {
                     </Toolbar>
                 </AppBar>
 
-
             ):( 
-                <nav class="navbar navbar-default navbar-light col-12" role="navigation" id="small-navbar">  
-
-                    
-                    <a class="navbar-brand col-3 " href="/">
-                        {/* <img src={logo} alt="Logo" class='navLogo-small '/> */}
-                    </a> 
-                    <button class="navbar-toggler" id="nav-burger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon" ></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item" id="nav-nav-item-small">
-                                <a class="nav-link" id="nav-link-small" href="/om-oss">Om oss <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item" id="nav-item-small">
-                                <a class="nav-link" id="nav-link-small" href="/medlem">Medlem</a>
-                            </li>
-                            <li class="nav-item" id="nav-nav-item-small">
-                                <a class="nav-link" id="nav-link-small" href="/event">Event</a>
-                            </li>
-                            {/* <li class="nav-item" id="nav-nav-item-small">
-                                <a class="nav-link" id="nav-link-small" href="/hall-of-fame">Hall of Fame</a>
-                            </li> */}
-                        </ul>
-                    </div>
-              </nav>
+                <>
+                <AppBar position="fixed" style={{ background: navBackground }} sx={{ boxShadow: navbarBorder, borderBottom: 0 }}>    
+                    <Toolbar sx={{ display: 'flex', justifyContent: 'end' }}>
+                        <NavbarLogo onClick={handleClick} className='navbar_logo_phone col-3'/> 
+                        
+                        {/* Hamburger icon for small screens */}
+                        <React.Fragment>
+                            <IconButton
+                                color="black"
+                                aria-label="open drawer"
+                                edge="start"
+                                onClick={toggleDrawer(true)}
+                                sx={{ display: { xs: 'block' } }}
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                            <Drawer
+                                anchor="right"
+                                open={isDrawerOpen}
+                                onClose={toggleDrawer(false)}
+                            >
+                                {list}
+                            </Drawer>
+                            </React.Fragment>
+                    </Toolbar>
+                </AppBar>
+                </>
             )}
         </div>
         
@@ -105,3 +157,18 @@ const Nav = () => {
 }
 
 export default Nav;
+
+
+            // <Drawer
+            //     anchor="right"
+            //     open={menuOpen}
+            //     onClose={() => setMenuOpen(false)}
+            //     >
+            //         <div style={{ width: 250 }}> {/* Set a width for your drawer */}
+            //             {/* Place your menu buttons here */}
+            //             {list(anchor)}
+            //             <Button href="/events" style={{ display: 'block', width: '100%' }}>Events</Button>
+            //             <Button href="/about" style={{ display: 'block', width: '100%' }}>Contact</Button>
+            //             <Button href="/courses" style={{ display: 'block', width: '100%' }}>LiU Courses</Button>
+            //         </div>
+            // </Drawer>

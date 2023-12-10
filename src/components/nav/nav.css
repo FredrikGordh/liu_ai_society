@@ -3,6 +3,13 @@
     overflow: hidden; 
 }
 
+/* Base styles */
+.Toolbar {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px; */
+    margin-right: 100px;
+  }
 
 .nav_logo_container{
     position: relative;
@@ -10,9 +17,45 @@
 
 .navbar_logo{
     position: absolute;
-    scale: 0.25;
+    scale: 1.8;
     /* left:0; */
 }
+
+/* Smaller screen */
+@media (max-width: 1550px) {
+    .navbar_logo {
+        position: absolute;
+        scale: 2.5;
+    }
+}
+
+/* Larger screen */
+@media (min-width: 1550px) {
+    .navbar_logo {
+        position: absolute;
+        scale: 1.8;
+    }
+}
+
+
+/* Phone screen */
+@media (max-width: 450px) {
+    .navbar_logo_phone{
+        position: absolute;
+        scale: 2.5;
+        left:0;
+    }
+}
+
+/* Tablets */
+@media (min-width: 450px) {
+    .navbar_logo_phone{
+        position: absolute;
+        scale: 1.5;
+        left:0;
+    }
+}
+
 
 .button_group{
     /* margin-left:100px; */

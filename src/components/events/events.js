@@ -14,7 +14,7 @@ const Event = () => {
            
             <div className='first_text_container row col-12 justify-content-center'>
                 <div class="paragraph-1 col-6">
-                    <h3>Where does it come from?</h3>
+                    <h3>Upcoming Events</h3>
                      
                     <p>
                         Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
@@ -30,7 +30,7 @@ const Event = () => {
             
             <div className='second_text_container row col-12 justify-content-center'>
                 <div class="paragraph-2 col-6">
-                    <h3>  Where can I get some?</h3>
+                    <h3>  Past Events</h3>
                     <p>
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, 
                         or randomised words which don't look even slightly believable.
