@@ -7,9 +7,8 @@ import { ReactComponent as LiuAisLogo } from './../../static/images/ai_liu_logo.
 
 const Home = () => {
 
-
     return(
-        <div>
+        <div className="home-container">
             <div class='home_background col-12'>
                 <Nav/>
                 <div className='logo_container'>

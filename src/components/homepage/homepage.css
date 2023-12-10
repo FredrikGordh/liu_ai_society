@@ -1,12 +1,17 @@
+.home-container{
+  /* overflow: auto;  */
+}
+
 .home_background{
   /* background-image: url("./../../static/images/coverphoto.png"); */
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   padding: 0;
+  
 }
 
 .logo_container{
@@ -19,24 +24,4 @@
   top: 50vh;
   left: 28vw;
   scale: 1.5;
-}
-
-.first_text_container{
-  height:50vh;
-  background-color: #E5E6EB;
-
-}
-
-.paragraph-1{
-  padding-top: 10vh;
-  text-align: center;
-}
-
-.paragraph-2{
-  text-align: center;
-}
-
-.second_text_container{
-  height: 50vh;
-  /* background-color: #F3F4F6; */
 }

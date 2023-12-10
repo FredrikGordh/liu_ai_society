@@ -16,6 +16,7 @@ import { ReactComponent as NavbarLogo }  from '../../static/images/navbar_logo.s
 
 const Nav = () => {
     const[windowSize, setWindowSize] = useState(getWindowSize());
+    
     const[largeScreen, setLargeScreen] = useState(false)
     const [navBackground, setNavBackground] = useState('transparent');
     const [navbarBorder, setNavbarBorder] = useState('none');
