@@ -16,40 +16,29 @@ import { ReactComponent as NavbarLogo }  from '../../static/images/navbar_logo.s
 
 const Nav = () => {
     const[windowSize, setWindowSize] = useState(getWindowSize());
-    
-    const[largeScreen, setLargeScreen] = useState(false)
     const [navBackground, setNavBackground] = useState('transparent');
     const [navbarBorder, setNavbarBorder] = useState('none');
     const [menuOpen, setMenuOpen] = useState(false);
-
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-    const menuItems = [
-        { text: 'Events', href: '/events' },
-        { text: 'Contact', href: '/about' },
-        { text: 'LiU Courses', href: '/courses' },
-      ];
 
     let navigate = useNavigate();
 
+    const menuItems = [
+        { text: 'Events', href: '/events' },
+        { text: 'About', href: '/about' },
+        { text: 'LiU Courses', href: '/courses' },
+      ];
 
     useEffect (() => {
         function handlewWindowResize(){
             setWindowSize(getWindowSize())
-            if(windowSize.innerWidth > 779){
-                setLargeScreen(true)
-            }else{
-                setLargeScreen(false)
-            }
         }
         window.addEventListener('resize', handlewWindowResize)
         window.addEventListener('scroll', handleScroll);
 
-
         return () =>{
             window.removeEventListener('resize', handlewWindowResize)
             window.removeEventListener('scroll', handleScroll);
-
         }
     },[])
 
@@ -75,25 +64,20 @@ const Nav = () => {
         ) {
           return;
         }
-    
         setIsDrawerOpen(open);
       };
-
 
     function getWindowSize () {
         const {innerWidth, innerHeight} = window
         console.log(innerWidth)  
         return {innerWidth, innerHeight};
     }
-
-    
-      
+   
     const list = (
       <Box
         role="presentation"
         onClick={toggleDrawer(false)}
-        onKeyDown={toggleDrawer(false)}
-      >
+        onKeyDown={toggleDrawer(false)}>
         <List>
             {menuItems.map((item) => (
             <ListItem key={item.text}>

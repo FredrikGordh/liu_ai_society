@@ -14,12 +14,9 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* .content{
-  background-color: white;
-} */
-
 .first_text_container{
   background-color: #E5E6EB;
+  padding:0;
 }
 
 .second_text_container{
@@ -27,14 +24,15 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .first_tex_container, .second_text_container{
-  width: 90%; /* Increase width as needed */
-  margin: -10vw; /* Center the container */
-  padding: 0; /* Adjust padding to control text width */
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   height: auto;
 }
 
 .paragraph-1, .paragraph-2{
   text-align: center;
+  justify-content: center;
   padding-top: 10vh;
   padding-bottom: 10vh;
   }

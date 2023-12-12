@@ -15,10 +15,10 @@ const Home = () => {
                     <LiuAisLogo className='liu_ais_logo col-6'/>
                 </div>
             </div>
-            <div class="content-below" >
             
-                <div className='first_text_container row col-12 justify-content-center'>
-                    <div className="paragraph-1 col-6">
+            <div className="row justify-content-center">
+                <div className='first_text_container col-12'>
+                    <div className="paragraph-1 col-10 mx-auto">
                         <h3>Where does it come from?</h3>
                         <p>
                             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
@@ -30,9 +30,11 @@ const Home = () => {
                             The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                         </p>
                     </div>
-                    </div>
-                    <div className='second_text_container row col-12 justify-content-center'>
-                    <div class="paragraph-2 col-5 ">
+                </div>
+            </div>
+            <div className="row justify-content-center">
+                <div className=' second_text_container col-12 justify-content-center'>
+                    <div class="paragraph-2 col-8 mx-auto">
                         <h3>  Where can I get some?</h3>
                         <p>
                             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, 
@@ -46,8 +48,6 @@ const Home = () => {
                 </div>
             </div>
         </div>
-
-    
     )
 }
 

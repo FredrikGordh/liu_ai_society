@@ -1,11 +1,19 @@
 .about_background{
-  background-color: white;
+  /* background-color: white; */
+  /* background-image: url("../../static/images/studenthuset.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
   height: 70vh;
   position: relative;
   padding: 0;
+  /* opacity: 0.2; */
+}
+
+.img-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about_headline{
@@ -13,8 +21,13 @@
   padding-top: 30vh;
 }
 
+.portrait_section_container{
+  padding-top:50px;
+  padding-bottom: 25px;
+}
 .portrait_container{
-  padding-top: 10vh;;
+  margin-top: 25px;
+  padding-top: 25px;
 }
 
 .portrait{
@@ -22,4 +35,33 @@
   height: 250px;
   width: 250px;
   margin-bottom: 10px;
+  object-fit: cover;
+  object-position: 50% 10%;
+  top:0;
 }
+
+.founder-name{
+  margin:0;
+}
+
+.founder-title{
+  margin:0;
+}
+
+#linkedin-portrait{
+  /* position: absolute; */
+  background: #0077B5;
+  color: white;
+  border-radius: 10%; 
+  scale: 70%;
+}
+
+/* .fa {
+  padding: 8px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 5px;
+  border-radius: 10%; 
+} */

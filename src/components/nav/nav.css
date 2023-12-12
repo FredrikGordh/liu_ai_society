@@ -18,6 +18,7 @@
 .navbar_logo{
     position: absolute;
     scale: 1.8;
+    overflow: hidden;
     /* left:0; */
 }
 
