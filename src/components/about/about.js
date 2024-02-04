@@ -4,6 +4,7 @@ import founder from "./../../static/images/nikke.jpeg"
 import co_founder1 from "./../../static/images/fredrik.jpeg"
 import co_founder2 from "./../../static/images/erik.jpeg"
 import co_founder3 from "./../../static/images/axel.jpeg"
+import studentHusetImg from "./../../static/images/studenthuset.jpg"
 
 
 const About = () => {
@@ -92,63 +93,6 @@ const About = () => {
 
     }
 
-    // could you write a function for portraits of the founding partners?
-    // const FoundingPartners = () => {
-    //     return(
-    // <div className='row text-center'>
-    //     {/* First Portrait Container (Left) */}
-    //     <div className="col-3">
-    //         <div className="portrait-container">
-    //             <img src={founder} alt="founder" className="portrait"/>
-    //             <p className="founder-name">Niklas Wretblad</p>
-    //             <p className="founder-title">Founder</p>
-    //                 <p>
-    //                     <a href="https://www.linkedin.com/in/niklaswretblad/" class="fa fa-linkedin " id="linkedin-portrait"></a>
-    //                     {/* <i class="fa fa-envelope-o" aria-hidden="true"></i>     */}
-    //                 </p>
-    //         </div>
-    //     </div>
-
-    //     {/* Second Portrait Container (Right) */}
-    //     <div className="col-3">
-    //         <div className="portrait-container ">
-    //             <img src={co_founder1} alt="co-founder" className="portrait"/>
-    //             <p className="founder-name">Fredrik Gordh</p>
-    //             <p className="founder-title">Co-Founder</p>
-    //             <p>
-    //                 <a href="https://www.linkedin.com/in/fredrik-gordh-riseby/" class="fa fa-linkedin " id="linkedin-portrait"></a>
-    //                 {/* <i class="fa fa-envelope-o" aria-hidden="true"></i>     */}
-    //             </p>
-    //         </div>
-    //     </div>
-
-    //     {/* Third Portrait Container (Left) */}
-    
-    //     <div className="col-3">
-    //         <div className="portrait-container">
-    //             <img src={co_founder2} alt="co-founder" className="portrait"/>
-    //             <p className="founder-name">Erik Larsson</p>
-    //             <p className="founder-title">Co-Founder</p>
-    //             <p>
-    //                 <a href="https://www.linkedin.com/in/erik-larsson-b19b42183/" class="fa fa-linkedin " id="linkedin-portrait"></a>
-    //                 {/* <i class="fa fa-envelope-o" aria-hidden="true"></i>     */}
-    //             </p>
-    //         </div>
-    //     </div>
-
-    //     {/* Fourth Portrait Container (Right) */}
-    //     <div className="col-3">
-    //         <div className="portrait-container">
-    //             <img src={co_founder3} alt="co-founder" className="portrait"/>
-    //             <p className="founder-name">Axel Wiksäter</p>
-    //             <p className="founder-title">Co-Founder</p>
-    //             <p>
-    //                 <a href="https://www.linkedin.com/in/axel-wiks%C3%A4ter-536785218/" class="fa fa-linkedin " id="linkedin-portrait"></a>
-    //                 {/* <i class="fa fa-envelope-o" aria-hidden="true"></i>     */}
-    //             </p>
-    //         </div>
-    //     </div>
-    // </div>
 
     return(
         <div>
@@ -156,7 +100,7 @@ const About = () => {
                 <Nav/>
                 <div className='img-container'>
                     <h3 className='about_headline'> Contact Details</h3>
-                    <img src="../static/images/studenthuset.jpg" alt="description"></img>
+                    <img src={studentHusetImg} alt="description" className='backgroundImage col-12'></img>
                 </div>
             </div>
     
@@ -209,29 +153,3 @@ const About = () => {
 }
 
 export default About;
-
-
-{/* <div className='first_text_container row col-12 justify-content-center'>
-<div className="paragraph-1 col-5">
-    <h3>Who we are</h3>
-    <p>
-        We are a student association at Linköping University devoted to the exploration, 
-        research and continuous learning of artificial intelligence. We cultivate connections with both 
-        industry and academia through networking events, educational lectures, workshops and research projects.
-        We serve as a platform for members and partners to network, build professional relationships, and share knowledge.
-    </p>
-</div>
-
-<div className="paragraph-2 col-5">
-    <h3>Vision</h3>
-    <p>
-        We are committed to organizing events that bridge the gap between students and the spheres of industry and academia. 
-        Through workshops, seminars, lectures and collaborative projects, we seek to broaden the AI and machine learning knowledge 
-        base of our student body, and to provide a clear view of potential career paths in these fields. The society is also meant to be a 
-        platform for engaged and ambitious students to garner internships or research opportunities.
-    </p>
-</div>
-</div>
-
-
-</div> */}
