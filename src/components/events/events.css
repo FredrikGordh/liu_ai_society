@@ -35,4 +35,12 @@
 
 .event_image{
   border-radius: 50px;
+  transform: scale(1.02);
+}
+
+#calendar_icon{
+  display: block;
+  margin: auto;
+  transform: scale(5);
+  margin-top: 10vh;
 }

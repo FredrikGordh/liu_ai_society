@@ -98,10 +98,11 @@ const About = () => {
         <div>
             <div class='about_background col-12' id="img-om-oss" >
                 <Nav/>
-                <div className='img-container'>
-                    <h3 className='about_headline'> Contact Details</h3>
-                    <img src={studentHusetImg} alt="description" className='backgroundImage col-12'></img>
-                </div>
+                {/* <div className='img-container'> */}
+                    <h2 className='about_headline'> Contact Details</h2>
+                    {/* <img src={studentHusetImg} alt="description" className='backgroundImage col-12'></img> */}
+                    <i class="fa fa-phone" id="phone_icon" aria-hidden="true"></i>
+                {/* </div> */}
             </div>
     
             <div className="row justify-content-center">
