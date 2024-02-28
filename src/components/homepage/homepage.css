@@ -1,10 +1,8 @@
 .home-container{
-  /* overflow: auto;  */
   width: 100%;
 }
 
 .home_background{
-  /* background-image: url("./../../static/images/coverphoto.png"); */
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,12 +10,10 @@
   min-height: 100vh;
   position: relative;
   padding: 0;
-  
 }
 
 .logo_container{
   position: relative;
-
 }
 
 .liu_ais_logo{

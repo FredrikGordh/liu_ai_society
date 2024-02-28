@@ -1,70 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Nav from "../nav/nav"
-import founder from "./../../static/images/nikke.jpeg"
-import co_founder1 from "./../../static/images/fredrik.jpeg"
-import co_founder2 from "./../../static/images/erik.jpeg"
-import co_founder3 from "./../../static/images/axel.jpeg"
-import studentHusetImg from "./../../static/images/studenthuset.jpg"
+import founders from "../../static/constants/founders"
+import activeMembers from "../../static/constants/activeMembers"
+import { useWindowSize } from '../../utils';
 
 
 const About = () => {
-    const[windowSize, setWindowSize] = useState(getWindowSize());
+    const windowSize = useWindowSize();
 
-    function getWindowSize () {
-        const {innerWidth, innerHeight} = window
-        console.log(innerWidth)  
-        return {innerWidth, innerHeight};
-    }
-
-    useEffect (() => {
-        function handlewWindowResize(){
-            setWindowSize(getWindowSize())
-        }
-        window.addEventListener('resize', handlewWindowResize)
-        return () =>{
-            window.removeEventListener('resize', handlewWindowResize)
-        }
-    },[])
-
-    const founders = [
-        {
-            name: "Niklas Wretblad",
-            title: "Founder",
-            linkedin: "https://www.linkedin.com/in/niklaswretblad/",
-            image: founder
-        },
-        {
-            name: "Fredrik Gordh",
-            title: "Co-Founder",
-            linkedin: "https://www.linkedin.com/in/fredrik-gordh-riseby/",
-            image: co_founder1
-        },
-        {
-            name: "Erik Larsson",
-            title: "Co-Founder",
-            linkedin: "https://www.linkedin.com/in/erik-larsson-b19b42183/",
-            image: co_founder2
-        },
-        {
-            name: "Axel Wiksäter",
-            title: "Co-Founder",
-            linkedin: "https://www.linkedin.com/in/axel-wiks%C3%A4ter-536785218/",
-            image: co_founder3
-        }
-    ]
-    const FoundingPartners = () => {
+    const displayMembers = (memberGroup) => {
         if (windowSize.innerWidth > 1100 ){
             return(
-                <div className='row text-center'>
-                    {founders.map((founder) => (
+                <div className='row justify-content-center text-center'>
+                    {memberGroup.map((member) => (
                         <div className="col-3">
-                            <div className="portrait-container">
-                                <img src={founder.image} alt="founder" className="portrait"/>
-                                <p className="founder-name">{founder.name}</p>
-                                <p className="founder-title">{founder.title}</p>
+                            <div className="portrait-row">
+                                <img src={member.image} alt="founder" className="portrait"/>
+                                <p className="member-name">{member.name}</p>
+                                <p className="member-title">{member.title}</p>
                                 <p>
-                                    <a href={founder.linkedin} class="fa fa-linkedin " id="linkedin-portrait"></a>
-                                    {/* <i class="fa fa-envelope-o" aria-hidden="true"></i>     */}
+                                    <a href={member.linkedin} class="fa fa-linkedin " id="linkedin-portrait"></a>
                                 </p>
                             </div>
                         </div>
@@ -73,16 +28,15 @@ const About = () => {
             )
         }else{
             return(
-                <div className='row text-center'>
-                    {founders.map((founder) => (
-                        <div className="col-12">
-                            <div className="portrait-container">
-                                <img src={founder.image} alt="founder" className="portrait"/>
-                                <p className="founder-name">{founder.name}</p>
-                                <p className="founder-title">{founder.title}</p>
+                <div className='row text-center justify-content-center'>
+                    {memberGroup.map((member) => (
+                        <div className="row">
+                            <div className="portrait-row">
+                                <img src={member.image} alt="member" className="portrait"/>
+                                <p className="member-name">{member.name}</p>
+                                <p className="member-title">{member.title}</p>
                                 <p>
-                                    <a href={founder.linkedin} class="fa fa-linkedin " id="linkedin-portrait"></a>
-                                    {/* <i class="fa fa-envelope-o" aria-hidden="true"></i>     */}
+                                    <a href={member.linkedin} class="fa fa-linkedin " id="linkedin-portrait"></a>
                                 </p>
                             </div>
                         </div>
@@ -90,61 +44,63 @@ const About = () => {
                 </div>
             )
         }
-
     }
-
 
     return(
         <div>
-            <div class='about_background col-12' id="img-om-oss" >
+            <div class='about_background col-12' >
                 <Nav/>
-                {/* <div className='img-container'> */}
-                    <h2 className='about_headline'> Contact Details</h2>
-                    {/* <img src={studentHusetImg} alt="description" className='backgroundImage col-12'></img> */}
-                    <i class="fa fa-phone" id="phone_icon" aria-hidden="true"></i>
-                {/* </div> */}
+                <div className='img-container row'>
+                    <h2 className='about_headline col-12'> About</h2>
+                    <i class="fa fa-users col-4" id="group_icon" ></i>
+                </div>
             </div>
-    
-            <div className="row justify-content-center">
-                <div className='first_text_container col-12'>
-                    <div className="paragraph-1 col-10 mx-auto">
-                        <h3>Who We Are</h3>
+                <div className=' first_text_container col-12 justify-content-center'>
+                    <div class="paragraph-1 col-10 mx-auto">
+                        <h3 className="paragraph-title">Contact</h3>
+                        Feel free to reach out to us for any inquiries or collaboration opportunities. We are always open to new ideas, partnerships and curious members.
                         <p>
-                        We are a student association at Linköping University devoted to the exploration, 
-                        research and continuous learning of artificial intelligence. We cultivate connections with both
-                        industry and academia through networking events, educational lectures, workshops and research projects.
-                        We serve as a platform for members and partners to network, build professional relationships, and share knowledge.
+                        <br/>
+                        {/* <a href="mailto:contact@liuais.com" class="fa fa-envelope-o" aria-hidden="true"></a> */}
+                        <a href="https://www.facebook.com/liuaisociety" class="fa fa-facebook " id="fb-logo" ></a>
+                        <a href="https://www.linkedin.com/company/liu-ai-society/" class="fa fa-linkedin " id="linkedin-logo"></a> 
+                        <a href="https://www.instagram.com/liuaisociety/" class="fa fa-instagram " id="insta-logo"></a>                 
                         </p>
                     </div>
                 </div>
-            </div>
-            <div className="row justify-content-center">
-                <div className=' second_text_container col-12 justify-content-center'>
-                    <div class="paragraph-2 col-8 mx-auto">
-                        <h3>Vision</h3>
-                        <p>
-                        We are committed to organizing events that bridge the gap between students and the spheres of industry and academia. 
-                        Through workshops, seminars, lectures and collaborative projects, we seek to broaden the AI and machine learning knowledge 
-                        base of our student body, and to provide a clear view of potential career paths in these fields. The society is also meant to be a 
-                        platform for engaged and ambitious students to garner internships or research opportunities.
-                        </p>
-                    </div>
-                </div>
-            </div>
+
             
-            <div className='portrait_section_container row col-12 justify-content-center'>
+             <div className='activeMembers_container'>
                 {windowSize.innerWidth > 1100 ?(
                     <div class="paragraph-4-desktop">
-                        <h3 className="text-center">Founding Partners</h3>
-                        <div className='portrait_container row col-12 justify-content-center'>
-                            {FoundingPartners()}
+                        <h3 className="paragraph-title text-center">Active Members</h3>
+                        <div className='portrait-row row col-12 justify-content-center'>
+                            {displayMembers(activeMembers)}
+                        </div>
+                    </div>  
+                ):(
+                    <div class="paragraph-4-mobile col-12">
+                        <h3 className="paragraph-title text-center">Active Members</h3>
+                        <div className='portrait-row col-12 justify-content-center'>
+                            {displayMembers(activeMembers)}
+                        </div>
+                    </div>  
+                )}
+            </div>
+            
+            <div className='foundingMembers_container '>
+                {windowSize.innerWidth > 1100 ?(
+                    <div class="paragraph-4-desktop">
+                        <h3 className="paragraph-title text-center">Founders</h3>
+                        <div className='portrait-row row col-12 justify-content-center'>
+                            {displayMembers(founders)}
                         </div>
                     </div>  
                 ):(
                     <div class="paragraph-4-mobile">
-                        <h3 className="text-center">Founding Partners</h3>
-                        <div className='portrait_container col-12 justify-content-center'>
-                            {FoundingPartners()}
+                        <h3 className="paragraph-title text-center">Founders</h3>
+                        <div className='portrait-row col-12 justify-content-center'>
+                            {displayMembers(founders)}
                         </div>
                     </div>  
                 )}
@@ -152,5 +108,4 @@ const About = () => {
         </div>    
     )
 }
-
 export default About;

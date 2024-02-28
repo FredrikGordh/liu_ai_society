@@ -1,6 +1,8 @@
-## LiU AI Society - Temporary Website
+## LiU AI Society - Website
 
-Temporary React Webapplication for LiU AI Society
+
+![Example Image](src/static/images/preview.jpg)
+
 
 
 #### Get started
@@ -14,5 +16,7 @@ Temporary React Webapplication for LiU AI Society
 `npm install`
 
 `npm start`
+
+`npm run build` to build project.
 
 

@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 const Footer = () => {
     return (
         <div class="footer">
@@ -10,7 +8,6 @@ const Footer = () => {
                             <a href=' mailto:contact@liuais.com' className="white-link"> contact@liuais.com</a>
                         </div>
                     </div>                    
-                    
                     <div class="logo-row">
                         <a href="https://www.facebook.com/liuaisociety" class="fa fa-facebook " id="fb-logo" ></a>
                         <a href="https://www.instagram.com/liuaisociety/" class="fa fa-instagram " id="insta-logo"></a>
@@ -19,5 +16,4 @@ const Footer = () => {
         </div>
     )
 }
-
 export default Footer;

@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Button, ButtonGroup} from '@mui/material';
+import { AppBar, Toolbar, Button, ButtonGroup} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/joy/List';
 import ListItem from '@mui/joy/ListItem';
-import ListItemButton from '@mui/joy/ListItemButton';
 import Box from '@mui/joy/Box';
-
-
 import { ReactComponent as NavbarLogo }  from '../../static/images/navbar_logo.svg';
-
-
 
 const Nav = () => {
     const[windowSize, setWindowSize] = useState(getWindowSize());
@@ -49,7 +44,7 @@ const Nav = () => {
       };
 
     const handleClick = () => {
-        navigate('/'); // Use the route you want to navigate to
+        navigate('/'); 
         console.log('clicked the logo')
     };
 
@@ -90,7 +85,6 @@ const Nav = () => {
       </Box>
     );
 
-      
     return (
         <div>
             {windowSize.innerWidth > 1100 ?(
@@ -101,7 +95,7 @@ const Nav = () => {
                         
                         <ButtonGroup style={{marginLeft:'60%'}}  variant="text" color="inherit" >
                             <Button color="inherit" href="/events" style={{color:'black'}}>Events</Button>
-                            <Button color="inherit" href="/about" style={{color:'black'}}> Contact</Button>
+                            <Button color="inherit" href="/about" style={{color:'black'}}> About</Button>
                             <Button color="inherit" href="/courses" style={{color:'black'}}>LiU Courses</Button>
                         </ButtonGroup>
                     </Toolbar>
@@ -111,8 +105,7 @@ const Nav = () => {
                 <>
                 <AppBar position="fixed" style={{ background: navBackground }} sx={{ boxShadow: navbarBorder, borderBottom: 0 }}>    
                     <Toolbar sx={{ display: 'flex', justifyContent: 'end' }}>
-                        <NavbarLogo onClick={handleClick} className='navbar_logo_phone col-3'/> 
-                        
+                        <NavbarLogo onClick={handleClick} className='navbar_logo_phone col-3'/>     
                         {/* Hamburger icon for small screens */}
                         <React.Fragment>
                             <IconButton
@@ -136,24 +129,7 @@ const Nav = () => {
                 </AppBar>
                 </>
             )}
-        </div>
-        
+        </div>     
     )
 }
-
 export default Nav;
-
-
-            // <Drawer
-            //     anchor="right"
-            //     open={menuOpen}
-            //     onClose={() => setMenuOpen(false)}
-            //     >
-            //         <div style={{ width: 250 }}> {/* Set a width for your drawer */}
-            //             {/* Place your menu buttons here */}
-            //             {list(anchor)}
-            //             <Button href="/events" style={{ display: 'block', width: '100%' }}>Events</Button>
-            //             <Button href="/about" style={{ display: 'block', width: '100%' }}>Contact</Button>
-            //             <Button href="/courses" style={{ display: 'block', width: '100%' }}>LiU Courses</Button>
-            //         </div>
-            // </Drawer>

@@ -1,4 +1,3 @@
-
 .app{
   height: 100%;
   position: relative;
@@ -9,55 +8,47 @@
   background-color: white;
 }
 
-/* Using Times New Roman for headings */
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Times New Roman', Times, serif;
 }
 
+.col-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column; 
+}
+
 .first_text_container{
   background-color: #E5E6EB;
-  padding:0;
 }
 
 .second_text_container{
   background-color: white;
 }
 
-.first_tex_container, .second_text_container{
-  width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  height: auto;
+.paragraph-title{
+  margin-top:-3vh;
+  margin-bottom:5vh;
 }
 
 .paragraph-1, .paragraph-2{
   text-align: center;
-  justify-content: center;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top:10vh;
+  padding-bottom:10vh;
   }
-
 
 .second_text_container{
   background-color: white;
 }
 
-
-/* Smaller screen
-@media (max-width: 1550px) {
-  .navbar_logo {
-      position: absolute;
-      scale: 2.5;
-  }
+.line_separator{
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin-top: 5vh;
 }
 
-/* Larger screen */
-/* @media (min-width: 1550px) {
-  .navbar_logo {
-      position: absolute;
-      scale: 1.8;
-  }
-}  */
 
 
 
