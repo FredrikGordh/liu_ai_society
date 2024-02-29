@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from "../nav/nav"
-import COURSES from "../../static/courses/courses.json"
+import COURSES from "../../static/constants/courses.json"
 import { useWindowSize } from '../../utils';
 
 const CoursesView = () => {

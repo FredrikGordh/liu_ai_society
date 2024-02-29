@@ -8,7 +8,7 @@
     {"course_code":"TDDE70","name":"Deep Learning","credits":6,"level":"A1X","block":1,"choice":"E","period":1,"area":"Neural Networks","link":"https:\/\/studieinfo.liu.se\/en\/kurs\/TDDE70"},
     {"course_code":"TDDE05","name":"AI Robotics","credits":"6*","level":"A1X","block":4,"choice":"E","period":1,"area":"Robotics","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDE05"},
     {"course_code":"TSRT14","name":"Sensor Fusion","credits":6,"level":"A1X","block":3,"choice":"E","period":1,"area":"Robotics","link":"https:\/\/studieinfo.liu.se\/kurs\/TSRT14"},
-    {"course_code":"TDDE01","name":"Maskininlärning","credits":6,"level":"A1X","block":1,"choice":"V","period":1,"area":"General","link":"https://studieinfo.liu.se/en/kurs/TDDE01/ht-2024"},
+    {"course_code":"TDDE01","name":"Machine Learning","credits":6,"level":"A1X","block":1,"choice":"V","period":1,"area":"General","link":"https://studieinfo.liu.se/en/kurs/TDDE01/ht-2024"},
     {"course_code":"TDDE15","name":"Advanced Machine Learning","credits":6,"level":"A1X","block":1,"choice":"E","period":1,"area":"General","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDE15"},
     {"course_code":"TDDE19","name":"Advanced Project Course - AI and Machine Learning","credits":"6*","level":"A1X","block":4,"choice":"E","period":1,"area":"General","link":"https:\/\/studieinfo.liu.se\/kurs\/TDDE19"},
     {"course_code":"TNM114","name":"Artificial Intelligence for Interactive Media, Project","credits":6,"level":"A1X","block":2,"choice":"E","period":1,"area":"General","link":"https:\/\/studieinfo.liu.se\/kurs\/TNM114"},
